@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de php</title>
+</head>
+<body>
+    <form action="<?php 
+        echo '<p>orde processo at ';
+        echo date('H:i, jS F');
+        echo '</p>';
+        ?>"
+     method="post">
+        <table>
+            <tr>
+                <td>Item</td>
+                <td>quanti</td>
+            </tr>
+
+            <tr>
+                <td>Tires</td>
+                <td><input type="text" name="tireqty" id="" size="3"></td>
+            </tr>
+            <tr>
+                <td>Oil</td>
+                <td><input type="text" name="oillqty" id="" size="3"></td>
+            </tr>
+            <tr>
+                <td>spark</td>
+                <td><input type="text" name="sparkqty" id="" size="3"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="enviar"></td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
